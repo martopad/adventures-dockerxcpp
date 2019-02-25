@@ -12,11 +12,7 @@ ENV https_proxy=http://cnhon1c-proxy.apac.nsn-net.net:8080
     RUN apt-get update
     RUN apt-get -y upgrade
     RUN apt-get install -y software-properties-common
-
-#     #RUN apt-get install -y build-essential
-#     #RUN add-apt-repository -y ppa:ubuntu-toolchain-r/test
-#     #RUN add-apt-repository -r ppa:fossfreedom/byzanz
-#     #RUN add-apt-repository ppa:jonathonf/gcc
+#   RUN apt-get install -y build-essential
 
 # #Installing GCC
     RUN apt-get install -y gcc-8 g++-8
@@ -27,8 +23,6 @@ ENV https_proxy=http://cnhon1c-proxy.apac.nsn-net.net:8080
     RUN apt-get install -y make
 
 # #Installing Pip for Conan Package Management
-    RUN apt-get update
-    #RUN apt-get install python3
     RUN apt-get install -y python3-pip
 
 
