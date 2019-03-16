@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  cpp-container:
+    build: ./cppContainer
+    volumes:
+      - ${CHECKOUT_LOCATION}:/source
+    working_dir: /source
+    entrypoint: /bin/bash
+    command: startup.sh
